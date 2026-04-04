@@ -4,11 +4,21 @@ FROM python:3.12-slim AS builder
 WORKDIR /app
 
 # System deps needed by lxml / reportlab
+# RUN apt-get update && apt-get install -y --no-install-recommends \
+#     gcc \
+#     libxml2-dev \
+#     libxslt-dev \
+#     && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    libxml2-dev \
-    libxslt-dev \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    texlive-publishers \
+    nodejs \
+    npm \
     && rm -rf /var/lib/apt/lists/*
+
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
