@@ -1,0 +1,27 @@
+python-dotenv
+langchain
+langchain-community
+langchain-groq==0.3.8
+langgraph
+langchain-mcp-adapters
+reportlab
+requests
+aiohttp
+beautifulsoup4
+lxml
+pydantic
+openai
+httpx
+arxiv
+
+# FastAPI Backend
+fastapi
+uvicorn[standard]
+
+# Optional: Only needed if using local HuggingFace models
+# langchain-huggingface
+# transformers
+# torch
+# accelerate
+# huggingface-hub
+# langchain_community

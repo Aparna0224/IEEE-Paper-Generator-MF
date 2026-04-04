@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env.local
+.env.*.local
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Version control
+.git/
+.gitignore
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated outputs (mounted as volume at runtime)
+outputs/
+logs/
+
+# Next.js frontend (built separately)
+nextjs-frontend/
